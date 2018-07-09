@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+.graphicTest {
+  grid-column: 1 / -1;
+  grid-row: 10 / 15;
+  background-color: #FF8866;
+  display: flex;
+  justify-content: center; }
+
+.bodyFadeIn-appear {
+  opacity: 0.01; }
+
+.bodyFadeIn-appear.bodyFadeIn-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in; }
+
+.fadeIn {
+  -webkit-animation: fadeIn;
+  animation: fadeIn; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.fadeOut {
+  -webkit-animation: fadeOut;
+  animation: fadeOut; }
+
+@-webkit-keyframes fadeOut {
+  100% {
+    opacity: 1; }
+  0% {
+    opacity: 0; } }
+@keyframes fadeOut {
+  100% {
+    opacity: 1; }
+  0% {
+    opacity: 0; } }
+* {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  color: black; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    color: #FF4225; }
+
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  background-color: #F9F9F9;
+  height: 100%;
+  width: 100%;
+  /*display: flex;
+  flex-direction: column;*/
+  /*display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 80px;
+  grid-template-areas: 'nav' 'main' 'footer';
+  grid-gap: 150px;
+  padding: 10px;
+*/ }
+
+nav {
+  /*grid-area: nav;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 30vh;
+  font-size: 100%; }
+
+.homeActive {
+  color: #FF4225; }
+
+.aboutActive {
+  color: #FF4225; }
+
+.contactActive {
+  color: #FF4225; }
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  grid-auto-columns: 25px;
+  grid-auto-rows: 25px;
+  grid-auto-flow: dense; }
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+.home-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 10/ -10;
+  grid-row: 6/ 11;
+  font-size: 125%; }
+
+.home-row1 {
+  grid-column: 5 / -5;
+  grid-row: 23 / 36;
+  display: flex;
+  justify-content: space-around; }
+  .home-row1 img {
+    width: 20em;
+    height: 20em; }
+    .home-row1 img:hover {
+      opacity: .5; }
+
+.home-name-row1 {
+  grid-column: 5 / -5;
+  grid-row: 23 / 33;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.home-row2 {
+  grid-column: 5 / -5;
+  grid-row: 43 / 55;
+  display: flex;
+  justify-content: space-around;
+  background-color: #FF4225; }
+  .home-row2 img {
+    width: 20em;
+    height: 20em; }
+    .home-row2 img:hover {
+      opacity: .5; }
+
+.home-name-row2 {
+  grid-column: 5 / -5;
+  grid-row: 43 / 53;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.p1 {
+  background-color: #FF8866;
+  grid-column: 5/ -5;
+  grid-row: 5 / 7;
+  font-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.p2 {
+  background-color: #FF8866;
+  grid-column: 20/ -20;
+  grid-row: 15 / 20;
+  font-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.p3 {
+  grid-column: 20/ -20;
+  grid-row: 30 / 35;
+  font-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.p4 {
+  grid-column: 20/ -20;
+  grid-row: 40 / 45;
+  font-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.aboutImg1 {
+  grid-column: 15 / 20;
+  grid-row: 10 / 15; }
+  .aboutImg1 img {
+    height: 15em;
+    width: 15em; }
+
+.contactParagraph {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 20/ -20;
+  background-color: #FF8866;
+  grid-row: 10/ 19;
+  font-size: 125%; }
+
+.contactImage {
+  background-color: #FF8866;
+  display: flex;
+  grid-column: 20 / 25;
+  grid-row: 25 / 30; }
+
+.webProjects {
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 8;
+  grid-row-end: 12;
+  display: flex;
+  justify-content: space-between; }
+  .webProjects img {
+    width: 17em;
+    height: 17em; }
+
+.item {
+  background-color: grey; }
+
+/*# sourceMappingURL=main.css.map */
