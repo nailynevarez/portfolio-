@@ -76,10 +76,9 @@ export default class App extends Component {
       transitionEnter = {false}>
         <body>
           <nav>
-            <a href = '#' className = {homeActive} onClick = {this.menuClick.bind(this, 'home')}>HOME</a>
+            <a href = '#' className = {homeActive} onClick = {this.menuClick.bind(this, 'home')}>WORK</a>
             <a href = '#' className = {aboutActive} onClick = {this.menuClick.bind(this, 'about')}>ABOUT</a>
-            <pre>
-            Logo or<br />   Name</pre>
+            <img src = '/images/square.png' title = "Logo" href = 'Logo' height = "30" width = "30" />
             <a href = '/documents/pdf.pdf'>RESUME</a>
             <a href = '#' className = {contactActive} onClick = {this.menuClick.bind(this, 'contact')}>CONTACT</a>
           </nav>
