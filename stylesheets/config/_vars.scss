@@ -1,0 +1,25 @@
+//font
+$font-family: 'Lato';
+$font-light: 100;
+$font-medium: 300;
+$font-regular: 400;
+$font-bold: 700;
+$font-color: black;
+
+//color palette
+$beige: #FCE7E4;
+$red: #FF4225;
+$dark: #B21F1E;
+$petal: #FF8866;
+$green: #80BD9E;
+$grey: #C0C0C0;
+
+
+//media queries variables
+$sm: 0; //Small screen / phone
+$ph: 401px; // Phablet / in between mobile and tablet
+$md: 769px; // Medium screen / tablet
+$sl: 990px; // Semi-large / in between tablet and desktop
+$lg: 1100px; // Large screen / desktop
+$xl: 1442px; // Extra large screen / wide desktop
+$xxl: 1900px; // Double Extra large screens / wide monitor

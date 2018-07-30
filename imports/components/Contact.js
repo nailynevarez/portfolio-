@@ -28,13 +28,13 @@ export default class Contact extends Component {
         <a href = 'https://linkedin.com' target = '_blank'>
         <img src = '/images/email.png' className = {this.state.showContact ? 'fadeIn' : 'fadeOut'}/>
         </a>
-        <a href = 'https://linkedin.com' target = '_blank'>
+        <a href = 'https://www.linkedin.com/in/naily-nevarez-4a4806115' target = '_blank'>
         <img src = '/images/linkedin.png' className = {this.state.showContact ? 'fadeIn' : 'fadeOut'}/>
         </a>
         <a href = 'https://linkedin.com' target = '_blank'>
         <img src = '/images/facebook.jpg' className = {this.state.showContact ? 'fadeIn' : 'fadeOut'}/>
         </a>
-        <a href = 'https://linkedin.com' target = '_blank'>
+        <a href = 'https://www.instagram.com/nailynevarez/?hl=en' target = '_blank'>
         <img src = '/images/instagram.png' className = {this.state.showContact ? 'fadeIn' : 'fadeOut'}/>
         </a>
         </div>

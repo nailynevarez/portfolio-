@@ -1,0 +1,7 @@
+
+//media query for responsiveness
+@mixin mq($query) {
+  @media (min-width: rem($query)) {
+    @content;
+  }
+}
