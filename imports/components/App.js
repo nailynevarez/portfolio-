@@ -81,11 +81,15 @@ export default class App extends Component {
             <span></span>
           </label>
           <nav>
+            <div className = "desktopMenu">
+              <a href = '#' className = {homeActive} onClick = {this.menuClick.bind(this, 'home')}>Work</a>
+              <h2 className = "myNameDesktop">NAILY NEVAREZ</h2>
+              <a href = '#' className = {aboutActive} onClick = {this.menuClick.bind(this, 'about')}>About</a>
+            </div>
             <h2 className = "myNameMobile">NAILY NEVAREZ</h2>
-            <ul>
-            <li><a href = '#' className = {homeActive} onClick = {this.menuClick.bind(this, 'home')}>Work</a></li>
-            <li><h2 className = "myNameDesktop">NAILY NEVAREZ</h2></li>
-            <li><a href = '#' className = {aboutActive} onClick = {this.menuClick.bind(this, 'about')}>About</a></li>
+            <ul className = "mobileList">
+              <li><a href = '#' className = {homeActive} onClick = {this.menuClick.bind(this, 'home')}>Work</a></li>
+              <li><a href = '#' className = {aboutActive} onClick = {this.menuClick.bind(this, 'about')}>About</a></li>
             </ul>
           </nav>
           <main>
