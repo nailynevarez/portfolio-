@@ -1,0 +1,20 @@
+
+//media queries variables
+$sm: 0; //Small screen / phone
+$ph: 401px; // Phablet / in between mobile and tablet
+$pm: 650px; //in between phablet and tablet
+$md: 769px; // Medium screen / tablet
+$sl: 990px; // Semi-large / in between tablet and desktop
+$lg: 1100px; // Large screen / desktop
+$xl: 1442px; // Extra large screen / wide desktop
+$xxl: 1900px; // Double Extra large screens / wide monitor
+
+//media query for responsiveness
+@mixin sm { @media (min-width: #{$sm}) {@content;}}
+@mixin ph { @media (min-width: #{$ph}) {@content;}}
+@mixin pm { @media (min-width: #{$pm}) {@content;}}
+@mixin md { @media (min-width: #{$md}) {@content;}}
+@mixin sl { @media (min-width: #{$sl}) {@content;}}
+@mixin lg { @media (min-width: #{$lg}) {@content;}}
+@mixin xl { @media (min-width: #{$xl}) {@content;}}
+@mixin xxl { @media (min-width: #{$xxl}) {@content;}}

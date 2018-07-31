@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import ErrorBoundary from './ErrorBoundary.js';
 import About from './About.js';
 import Home from './Home.js';
-import Contact from './Contact.js';
-import '/client/main.css';
+import '/stylesheets/css/app.css';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
@@ -75,12 +74,19 @@ export default class App extends Component {
       transitionLeave = {false}
       transitionEnter = {false}>
         <body>
+          <input id = 'burger' type = 'checkbox'/>
+          <label for = 'burger'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
           <nav>
-            <a href = '#' className = {homeActive} onClick = {this.menuClick.bind(this, 'home')}>WORK</a>
-            <a href = '#' className = {aboutActive} onClick = {this.menuClick.bind(this, 'about')}>ABOUT</a>
-            <img src = '/images/square.png' title = "Logo" href = 'Logo' height = "30" width = "30" />
-            <a href = '/documents/pdf.pdf'>RESUME</a>
-            <a href = '#' className = {contactActive} onClick = {this.menuClick.bind(this, 'contact')}>CONTACT</a>
+            <h2 className = "myNameMobile">NAILY NEVAREZ</h2>
+            <ul>
+            <li><a href = '#' className = {homeActive} onClick = {this.menuClick.bind(this, 'home')}>Work</a></li>
+            <li><h2 className = "myNameDesktop">NAILY NEVAREZ</h2></li>
+            <li><a href = '#' className = {aboutActive} onClick = {this.menuClick.bind(this, 'about')}>About</a></li>
+            </ul>
           </nav>
           <main>
            {component}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ErrorBoundary from './ErrorBoundary.js'
-import '/client/main.css';
+import '/stylesheets/css/app.css';
 
 
 export default class About extends Component {

@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 import ErrorBoundary from './ErrorBoundary.js';
-import Graphic from './Graphic.js';
-import Fine from './Fine.js';
-import Web from './Web.js';
-import Writing from './Writing.js';
-import Volunteer from './Volunteer.js';
-import Award from './Award';
-import '/client/main.css';
+import '/stylesheets/css/app.css';
 
 
 export default class Home extends Component {
