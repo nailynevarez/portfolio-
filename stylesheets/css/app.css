@@ -1,6 +1,70 @@
 @import url("https://fonts.googleapis.com/css?family=Abel");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i");
+.home-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 150px 40px; }
+  @media (min-width: 650px) {
+    .home-intro {
+      margin: 200px 100px; } }
+  @media (min-width: 990px) {
+    .home-intro {
+      margin: 250px 150px; } }
+  @media (min-width: 1100px) {
+    .home-intro {
+      margin: 300px 200px; } }
+  @media (min-width: 1442px) {
+    .home-intro {
+      margin: 350px 250px; } }
+  .home-intro p {
+    text-align: center;
+    font-size: 80%;
+    font-weight: 700; }
+    @media (min-width: 1100px) {
+      .home-intro p {
+        font-size: 110%; } }
+
+.name-row1, .name-row2, .name-row3, .name-row4 {
+  display: none; }
+
+.image-row2, .image-row3, .image-row4 {
+  display: none; }
+
+.image-row1, .image-row3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 5px; }
+  .image-row1 img, .image-row3 img {
+    width: 23em;
+    height: 23em;
+    margin-bottom: 17px; }
+    @media (min-width: 650px) {
+      .image-row1 img, .image-row3 img {
+        width: calc(51% - 2vw);
+        height: calc(51% - 2vw);
+        margin-bottom: 8px; } }
+
+.image-row2, .image-row4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 10px 10px 10px; }
+  @media (min-width: 650px) {
+    .image-row2, .image-row4 {
+      background-color: grey; } }
+  .image-row2 img, .image-row4 img {
+    width: 23em;
+    height: 23em;
+    margin-bottom: 17px; }
+    @media (min-width: 650px) {
+      .image-row2 img, .image-row4 img {
+        width: calc(51% - 2vw);
+        height: calc(51% - 2vw);
+        margin-bottom: 0px; } }
+
 html, body {
   background-color: white;
   height: 100%;
@@ -135,11 +199,6 @@ input:checked ~ nav {
   input:checked ~ nav > ul > li {
     opacity: 1;
     transition-delay: .5s; }
-
-main {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: 1fr; }
 
 footer {
   height: 40vh;
