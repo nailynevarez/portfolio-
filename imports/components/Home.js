@@ -69,7 +69,7 @@ export default class Home extends Component {
     //determine which category to show, directs to external components
     let work = null;
     switch (this.state.activeWork) {
-    
+
     }
 
     return (
@@ -78,7 +78,7 @@ export default class Home extends Component {
 
       { this.state.showHome ?
       <div className = "home-intro">
-      <p> &#8212; I&#39;m a Graphic designer, Illustrator, and Web developer who is passionate about using her creative and technical skills for greater social change.</p>
+      <p> &#8212; I&#39;m a Graphic designer, Illustrator, and Web developer using her creative and technical skills for greater social change.</p>
       </div>
       : null}
 
@@ -111,28 +111,28 @@ export default class Home extends Component {
 
       { this.state.showHome ?
         <div className = 'image-row1'>
-        <img src = '/images/placeholder.png' title = "Graphic Design" href = 'graphic-design' onClick = {this.displayWork.bind(this, 'graphic')} />
-        <img src = '/images/placeholder.png' title = "Fine Art" href = 'fine-art'onClick = {this.displayWork.bind(this, 'fine')}/>
+        <img src = '/images/muxeres.png' title = "Graphic Design" href = 'graphic-design' onClick = {this.displayWork.bind(this, 'graphic')} />
+        <img src = '/images/yaninart.png' title = "Fine Art" href = 'fine-art'onClick = {this.displayWork.bind(this, 'fine')}/>
         </div>
       : null}
 
       { this.state.showHome ?
         <div className = 'image-row2'>
-        <img src = '/images/placeholder.png' title = "Web Dev" href = 'web-dev'onClick = {this.displayWork.bind(this, 'web')}/>
+        <img src = '/images/raza.png' title = "Web Dev" href = 'web-dev'onClick = {this.displayWork.bind(this, 'web')}/>
         </div>
       : null}
 
       { this.state.showHome ?
       <div className = 'image-row3'>
-        <img src = '/images/placeholder.png' title = "Writing Samples" href = 'writing-samples' onClick = {this.displayWork.bind(this, 'writing')}/>
-        <img src = '/images/placeholder.png' title = "Volunteer Work" href = 'volunteer-work' onClick = {this.displayWork.bind(this, 'volunteer')}/>
+        <img src = '/images/orkids.png' title = "Writing Samples" href = 'writing-samples' onClick = {this.displayWork.bind(this, 'writing')}/>
+        <img src = '/images/coco.png' title = "Volunteer Work" href = 'volunteer-work' onClick = {this.displayWork.bind(this, 'volunteer')}/>
       </div>
       : null}
 
 
       { this.state.showHome ?
       <div className = 'image-row4'>
-        <img src = '/images/placeholder.png' title = "Awards & Honors" href = 'awards-and-honors' onClick = {this.displayWork.bind(this, 'award')}/>
+        <img src = '/images/majesty.png' title = "Awards & Honors" href = 'awards-and-honors' onClick = {this.displayWork.bind(this, 'award')}/>
         </div>
       : null}
 

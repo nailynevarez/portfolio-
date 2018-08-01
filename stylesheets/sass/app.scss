@@ -1,68 +1,74 @@
 
-
 @import 'partials/vars';
 @import 'partials/mixins';
 @import 'partials/about';
 @import 'partials/work';
 @import 'partials/header_body_footer';
-@import 'partials/animation';
 
-//home page -------------------------------------
-      .home-intro {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        grid-column: 3/ 11;
-        grid-row: 7/ 11;
-        font-size: 175%;
-        font-weight: $font-bold;
-      }
+//on page load
+.bodyFadeIn-appear {
+  opacity: 0.01;
+}
 
-      .home-row1 {
-        grid-column: 2 / -2;
-        grid-row: 19 / 27;
-        display: flex;
-        justify-content: space-around;
-          img {
-            width: 20em;
-            height: 20em;
-            &:hover {
-              opacity: .5;
-            }
-          }
-        }
+.bodyFadeIn-appear.bodyFadeIn-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
 
-      .home-name-row1 {
-        grid-column: 2 / -2;
-        grid-row: 19 / 27;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
+//fade in body // doesn't work right now lol
+.fadeIn {
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
 
-      .home-row2 {
-        grid-column: 2 / -2;
-        grid-row: 29/ 37;
-        display: flex;
-        justify-content: space-around;
-          img {
-            width: 20em;
-            height: 20em;
-            &:hover {
-              opacity: .5;
-            }
-          }
-        }
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
-        .home-name-row2 {
-          grid-column: 2 / -2;
-          grid-row: 29/ 37;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-        }
+@-moz-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
+@-o-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut 1s;
+  -moz-animation: fadeOut 1s;
+  -o-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+
+@-webkit-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@-moz-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@-o-keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
         //about page -------------------------------------
         .aboutParagraph {
           display: flex;

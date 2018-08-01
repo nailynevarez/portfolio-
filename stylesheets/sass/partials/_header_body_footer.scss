@@ -1,5 +1,5 @@
 html, body {
-  background-color: white;
+  background-color: #FAFAFA;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -33,12 +33,14 @@ a {
 .myNameDesktop {
   @include pm {display: flex}
   display: none;
+  font-size: 20px;
+  margin: 25px 0;
 }
 
 .myNameMobile {
   @include pm {display: none;}
-  font-size: 23px;
-  margin: 22px auto;
+  font-size: 20px;
+  margin: 23px auto;
   text-align: center;
 }
 
@@ -99,6 +101,7 @@ input ~ nav {
       align-items: center;
       display: flex;
       justify-content: space-between;
+      background-color: #FAFAFA;
     }
     a {
       @include pm {display: flex}
@@ -106,8 +109,9 @@ input ~ nav {
       margin: 0 40px;
     }
   }
-  background: white;
-  height: 50px;
+  background: #FAFAFA;
+  box-shadow: 0 0 20px 1px #FAFAFA;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;

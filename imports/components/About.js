@@ -17,8 +17,14 @@ export default class About extends Component {
     return (
       <ErrorBoundary>
 
+      { this.state.showAbout ?
+        <div className = 'aboutImg'>
+        <img src = '/images/me.JPG' className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}/>
+        </div>
+      : null}
+
       {this.state.showAbout ?
-      <div className= "aboutParagraph">
+      <div className= "aboutParagraphs">
       <p id = "firstP" className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>I&#39;m a Graphic designer, Illustrator, and Web developer who is passionate about using her creative and technical skills for greater social change.</p>
 
       <p className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -30,11 +36,7 @@ export default class About extends Component {
       </div>
       : null}
 
-      { this.state.showAbout ?
-        <div className = 'aboutImg1'>
-        <img src = '/images/placeholder.png' title = "Graphic Design" href = 'graphic-design' className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}/>
-        </div>
-      : null}
+
 
 
       </ErrorBoundary>

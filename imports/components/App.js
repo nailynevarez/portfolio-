@@ -11,6 +11,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       activeItem: 'home',
+      checkBox: false,
     };
   }
 
@@ -24,11 +25,19 @@ export default class App extends Component {
         activeItem: name,
       });
     }
+    this.checkClick();
   }
 
   //if menu is 'home,' refresh the page
   reloadPage = () => {
     window.location.reload();
+  }
+
+  checkClick = () => {
+    this.setState({
+      checkBox: !this.state.checkBox,
+    });
+    console.log(this.state.checkBox);
   }
 
   render() {
@@ -45,12 +54,6 @@ export default class App extends Component {
       aboutActive = 'aboutActive';
     }
 
-    //if contact active
-    let contactActive = 'about';
-    if(this.state.activeItem == 'contact') {
-      contactActive = 'contactActive';
-    }
-
     //which menu to show
     let component = null;
     switch (this.state.activeItem) {
@@ -59,9 +62,6 @@ export default class App extends Component {
         break;
       case 'about':
         component = <About />;
-        break;
-      case 'contact':
-        component = <Contact />;
         break;
     }
 
@@ -74,7 +74,7 @@ export default class App extends Component {
       transitionLeave = {false}
       transitionEnter = {false}>
         <body>
-          <input id = 'burger' type = 'checkbox'/>
+          <input id = 'burger' type = 'checkbox' checked = {this.state.checkBox} onClick = {this.checkClick.bind(this)}/>
           <label for = 'burger'>
             <span></span>
             <span></span>

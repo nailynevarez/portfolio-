@@ -1,0 +1,18 @@
+//about page -------------------------------------
+.aboutParagraphs {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+  color: grey;
+  font-weight: $font-medium;
+}
+
+.aboutImg {
+  display: flex;
+  justify-content: center;
+  margin: 150px auto 50px auto;
+  img {
+    height: 65%;
+    width: 65%;
+  }
+}

@@ -1,47 +1,61 @@
 .home-intro {
   @include pm {margin: 200px 100px;}
-  @include sl {margin: 250px 150px;}
-  @include lg {margin: 300px 200px}
-  @include xl {margin: 350px 250px;}
-  display: flex;
+  @include lg {margin: 260px 200px}
+  @include xl {margin: 280px 300px;}
   align-items: center;
+  display: flex;
   justify-content: space-between;
   margin: 150px 40px;
     p {
-      @include lg {font-size: 110%;}
-      text-align: center;
-      font-size: 80%;
+      @include sl {
+        font-size: 190%;
+        line-height: 35px;
+      }
+      @include lg {
+        font-size: 240%;
+        line-height: 45px;
+      }
+      @include xl {
+        font-size: 270%;
+        line-height: 55px;
+      }
+      font-size: 130%;
       font-weight: $font-bold;
+      line-height: 30px;
+      text-align: center;
     }
 }
 
-.name-row1, .name-row2, .name-row3, .name-row4 {
-  display: none;
-}
+.name-row1, .name-row2, .name-row3, .name-row4 {display: none;}
 
-.image-row2, .image-row3, .image-row4 {
-  display: none;
-}
-
+//two column rows
 .image-row1, .image-row3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 5px;
   img {
-    width: 23em;
     height: 23em;
     margin-bottom: 17px;
+    width: 23em;
     @include pm {
       width: calc(51% - 2vw);
       height: calc(51% - 2vw);
       margin-bottom: 8px;
     }
+    &:hover {
+      opacity: .5;
+      transition: opacity .5s ease-out;
+      -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
+    }
   }
 }
 
+//one column rows
 .image-row2, .image-row4 {
-  @include pm {background-color: grey;}
+  @include pm {background-color: black;}
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -54,6 +68,13 @@
       width: calc(51% - 2vw);
       height: calc(51% - 2vw);
       margin-bottom: 0px;
+    }
+    &:hover {
+      opacity: .5;
+      transition: opacity .5s ease-out;
+      -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
     }
   }
 }
