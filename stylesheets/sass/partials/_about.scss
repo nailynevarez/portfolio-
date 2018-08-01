@@ -1,10 +1,29 @@
 //about page -------------------------------------
 .aboutParagraphs {
+  // @include pm {margin: 5vw 25vw;}
+  // @include lg {margin: 5vw 35vw;}
   display: flex;
   flex-direction: column;
-  margin: 0 50px;
+  margin: 5vw 10vw;
   color: grey;
   font-weight: $font-medium;
+  p > span {
+    color: $red;
+  }
+  button {
+    border-radius: 22px;
+    border: 2px solid $red;
+    color: $red;
+    font-size: 15px;
+    background: transparent;
+    padding: 10px;
+    margin: 20px 150px 0px 0px;
+    &:hover{
+      transition: .7s;
+      background-color: $red;
+      color: white;
+    }
+  }
 }
 
 .aboutImg {
@@ -12,7 +31,7 @@
   justify-content: center;
   margin: 150px auto 50px auto;
   img {
-    height: 65%;
-    width: 65%;
+    height: calc(300px + 17vw);
+    width: calc(270px + 17vw);
   }
 }

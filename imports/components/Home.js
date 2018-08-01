@@ -78,7 +78,7 @@ export default class Home extends Component {
 
       { this.state.showHome ?
       <div className = "home-intro">
-      <p> &#8212; I&#39;m a Graphic designer, Illustrator, and Web developer using her creative and technical skills for greater social change.</p>
+      <p> &#8212; I&#39;m a Graphic designer, Illustrator, and Web developer using her creative skills for greater social change.</p>
       </div>
       : null}
 
