@@ -16,7 +16,7 @@ export default class App extends Component {
   }
 
   //define which menu was clicked
-  menuClick = (name) => {
+  menuClickMobile = (name) => {
     if (name == 'home') {
       this.reloadPage();
     }
@@ -26,6 +26,17 @@ export default class App extends Component {
       });
     }
     this.checkClick();
+  }
+
+  menuClickDesktop = (name) => {
+    if (name == 'home') {
+      this.reloadPage();
+    }
+    else {
+      this.setState({
+        activeItem: name,
+      });
+    }
   }
 
   //if menu is 'home,' refresh the page
@@ -82,14 +93,14 @@ export default class App extends Component {
           </label>
           <nav>
             <div className = "desktopMenu">
-              <a href = '#' className = {homeActive} onClick = {this.menuClick.bind(this, 'home')}>Work</a>
+              <a href = '#' className = {homeActive} onClick = {this.menuClickDesktop.bind(this, 'home')}>Work</a>
               <h2 className = "myNameDesktop">NAILY NEVAREZ</h2>
-              <a href = '#' className = {aboutActive} onClick = {this.menuClick.bind(this, 'about')}>About</a>
+              <a href = '#' className = {aboutActive} onClick = {this.menuClickDesktop.bind(this, 'about')}>About</a>
             </div>
             <h2 className = "myNameMobile">NAILY NEVAREZ</h2>
             <ul className = "mobileList">
-              <li><a href = '#' className = {homeActive} onClick = {this.menuClick.bind(this, 'home')}>Work</a></li>
-              <li><a href = '#' className = {aboutActive} onClick = {this.menuClick.bind(this, 'about')}>About</a></li>
+              <li><a href = '#' className = {homeActive} onClick = {this.menuClickMobile.bind(this, 'home')}>Work</a></li>
+              <li><a href = '#' className = {aboutActive} onClick = {this.menuClickMobile.bind(this, 'about')}>About</a></li>
             </ul>
           </nav>
           <main>

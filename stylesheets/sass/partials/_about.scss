@@ -1,14 +1,18 @@
 //about page -------------------------------------
 .aboutParagraphs {
-  // @include pm {margin: 5vw 25vw;}
-  // @include lg {margin: 5vw 35vw;}
   display: flex;
   flex-direction: column;
-  margin: 5vw 10vw;
   color: grey;
   font-weight: $font-medium;
-  p > span {
-    color: $red;
+  > * {
+    margin: 20px auto;
+    width: calc(270px + 20vw);
+    p {
+      line-height: 30px;
+    }
+    span {
+      color: $red;
+    }
   }
   button {
     border-radius: 22px;
@@ -17,7 +21,6 @@
     font-size: 15px;
     background: transparent;
     padding: 10px;
-    margin: 20px 150px 0px 0px;
     &:hover{
       transition: .7s;
       background-color: $red;
@@ -29,9 +32,9 @@
 .aboutImg {
   display: flex;
   justify-content: center;
-  margin: 150px auto 50px auto;
+  margin: 250px auto 100px auto;
   img {
-    height: calc(300px + 17vw);
-    width: calc(270px + 17vw);
+    height: calc(300px + 20vw);
+    width: calc(270px + 20vw);
   }
 }

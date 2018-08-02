@@ -4,19 +4,22 @@
 .aboutParagraphs {
   display: flex;
   flex-direction: column;
-  margin: 5vw 10vw;
   color: grey;
   font-weight: 300; }
-  .aboutParagraphs p > span {
-    color: #FF4225; }
+  .aboutParagraphs > * {
+    margin: 20px auto;
+    width: calc(270px + 20vw); }
+    .aboutParagraphs > * p {
+      line-height: 30px; }
+    .aboutParagraphs > * span {
+      color: #FF4225; }
   .aboutParagraphs button {
     border-radius: 22px;
     border: 2px solid #FF4225;
     color: #FF4225;
     font-size: 15px;
     background: transparent;
-    padding: 10px;
-    margin: 20px 150px 0px 0px; }
+    padding: 10px; }
     .aboutParagraphs button:hover {
       transition: .7s;
       background-color: #FF4225;
@@ -25,10 +28,10 @@
 .aboutImg {
   display: flex;
   justify-content: center;
-  margin: 150px auto 50px auto; }
+  margin: 250px auto 100px auto; }
   .aboutImg img {
-    height: calc(300px + 17vw);
-    width: calc(270px + 17vw); }
+    height: calc(300px + 20vw);
+    width: calc(270px + 20vw); }
 
 .home-intro {
   align-items: center;
