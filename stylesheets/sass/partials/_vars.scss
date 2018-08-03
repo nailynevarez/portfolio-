@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
 
 //font
 $font-family: 'Lato';
@@ -9,6 +10,7 @@ $font-medium: 300;
 $font-regular: 400;
 $font-bold: 700;
 $font-color: black;
+$work-title-font: "Merriweather", serif;
 
 //color palette
 $beige: #FCE7E4;
@@ -17,14 +19,3 @@ $dark: #B21F1E;
 $petal: #FF8866;
 $green: #80BD9E;
 $grey: #C0C0C0;
-
-
-//media queries variables
-$sm: 0; //Small screen / phone
-$ph: 401px; // Phablet / in between mobile and tablet
-$pm: 650px; //in between phablet and tablet
-$md: 769px; // Medium screen / tablet
-$sl: 990px; // Semi-large / in between tablet and desktop
-$lg: 1100px; // Large screen / desktop
-$xl: 1442px; // Extra large screen / wide desktop
-$xxl: 1900px; // Double Extra large screens / wide monitor

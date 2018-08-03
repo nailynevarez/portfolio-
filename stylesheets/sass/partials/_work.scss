@@ -1,7 +1,7 @@
 .home-intro {
-  @include pm {margin: 200px 100px;}
-  @include lg {margin: 260px 200px}
-  @include xl {margin: 280px 300px;}
+  @include pm {margin: 180px 100px;}
+  @include lg {margin: 240px 200px}
+  @include xl {margin: 260px 300px;}
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -19,7 +19,6 @@
         font-size: 270%;
         line-height: 55px;
       }
-      color: #282828;
       font-size: 180%;
       font-weight: $font-bold;
       line-height: 35px;

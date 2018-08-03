@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import ErrorBoundary from './ErrorBoundary.js';
+import Work1 from './Work1.js';
+import Work2 from './Work2.js';
+import Work3 from './Work3.js';
+import Work4 from './Work4.js';
+import Work5 from './Work5.js';
+import Work6 from './Work6.js';
 import '/stylesheets/css/app.css';
 
 
@@ -23,39 +29,39 @@ export default class Home extends Component {
       });
 
       //determine which category was clicked
-      if (work == 'graphic') {
+      if (work == 'work1') {
         this.setState({
-          activeWork: 'graphic',
+          activeWork: 'work1',
         });
       }
 
-      if (work == 'fine') {
+      if (work == 'work2') {
         this.setState({
-          activeWork: 'fine',
+          activeWork: 'work2',
         });
       }
 
-      if (work == 'web') {
+      if (work == 'work3') {
         this.setState({
-          activeWork: 'web',
+          activeWork: 'work3',
         });
       }
 
-      if (work == 'writing') {
+      if (work == 'work4') {
         this.setState({
-          activeWork: 'writing',
+          activeWork: 'work4',
         });
       }
 
-      if (work == 'volunteer') {
+      if (work == 'work5') {
         this.setState({
-          activeWork: 'volunteer',
+          activeWork: 'work5',
         });
       }
 
-      if (work == 'award') {
+      if (work == 'work6') {
         this.setState({
-          activeWork: 'award',
+          activeWork: 'work6',
         });
       }
     }
@@ -64,12 +70,28 @@ export default class Home extends Component {
 
 
   render() {
-    //fade in
 
     //determine which category to show, directs to external components
-    let work = null;
+    let component = null;
     switch (this.state.activeWork) {
-
+      case 'work1':
+        component = <Work1 />;
+        break;
+      case 'work2':
+        component = <Work2 />;
+        break;
+      case 'work3':
+        component = <Work3 />;
+        break;
+      case 'work4':
+        component = <Work4 />;
+        break;
+      case 'work5':
+        component = <Work5 />;
+        break;
+      case 'work6':
+        component = <Work6 />;
+        break;
     }
 
     return (
@@ -111,33 +133,32 @@ export default class Home extends Component {
 
       { this.state.showHome ?
         <div className = 'image-row1'>
-        <img src = '/images/muxeres.png' title = "Graphic Design" href = 'graphic-design' onClick = {this.displayWork.bind(this, 'graphic')} />
-        <img src = '/images/yaninart.png' title = "Fine Art" href = 'fine-art'onClick = {this.displayWork.bind(this, 'fine')}/>
+        <img src = '/images/muxeres.png' title = "Graphic Design" href = 'graphic-design' onClick = {this.displayWork.bind(this, 'work1')} />
+        <img src = '/images/yaninart.png' title = "Fine Art" href = 'fine-art'onClick = {this.displayWork.bind(this, 'work2')}/>
         </div>
       : null}
 
       { this.state.showHome ?
         <div className = 'image-row2'>
-        <img src = '/images/raza.png' title = "Web Dev" href = 'web-dev'onClick = {this.displayWork.bind(this, 'web')}/>
+        <img src = '/images/raza.png' title = "Web Dev" href = 'web-dev'onClick = {this.displayWork.bind(this, 'work3')}/>
         </div>
       : null}
 
       { this.state.showHome ?
       <div className = 'image-row3'>
-        <img src = '/images/orkids.png' title = "Writing Samples" href = 'writing-samples' onClick = {this.displayWork.bind(this, 'writing')}/>
-        <img src = '/images/coco.png' title = "Volunteer Work" href = 'volunteer-work' onClick = {this.displayWork.bind(this, 'volunteer')}/>
+        <img src = '/images/orkids.png' title = "Writing Samples" href = 'writing-samples' onClick = {this.displayWork.bind(this, 'work4')}/>
+        <img src = '/images/coco.png' title = "Volunteer Work" href = 'volunteer-work' onClick = {this.displayWork.bind(this, 'work5')}/>
       </div>
       : null}
 
 
       { this.state.showHome ?
       <div className = 'image-row4'>
-        <img src = '/images/majesty.png' title = "Awards & Honors" href = 'awards-and-honors' onClick = {this.displayWork.bind(this, 'award')}/>
+        <img src = '/images/majesty.png' title = "Awards & Honors" href = 'awards-and-honors' onClick = {this.displayWork.bind(this, 'work6')}/>
         </div>
       : null}
 
-
-      {this.state.showWork && work}
+      {this.state.showWork && component}
       </ErrorBoundary>
     );
   }

@@ -1,0 +1,33 @@
+.Work1Text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  text-align: center;
+  h1 {
+    font-family: $work-title-font;
+    font-weight: $font-light;
+    font-size: 280%;
+    margin: 0px 0;
+  }
+  h3 {
+    color: $red;
+    margin: 20px 0 20px 0;
+  }
+  > p {
+    color: grey;
+    font-weight: 150;
+    line-height: 30px;
+    margin: 20px auto;
+    width: calc(270px + 20vw);  
+  }
+}
+
+.Work1Img {
+  display: flex;
+  justify-content: center;
+  margin: 250px auto 100px auto;
+  img {
+    height: calc(300px + 20vw);
+    width: calc(270px + 20vw);
+  }
+}

@@ -1,10 +1,11 @@
 html, body {
+  @include pm {padding: 25px 0 0 0;}
   background-color: #FAFAFA;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
   margin: 0;
-  padding: 0;
+  padding: 20px 0 0 0;
 }
 
 * {
@@ -33,7 +34,7 @@ a {
   @include pm {display: flex}
   display: none;
   font-size: 20px;
-  margin: 25px 0;
+  margin: 35px 0;
 }
 
 .myNameMobile {
@@ -106,13 +107,12 @@ input ~ nav {
     a {
       @include pm {display: flex}
       display: none;
-      margin: 0 40px;
+      margin: 0 50px;
     }
   }
-  @include pm {background: transparent; box-shadow: none;}
   background: #FAFAFA;
-  box-shadow: 0 0 20px 1px #FAFAFA;
-  height: 70px;
+  box-shadow: 0 0 50px 10px #FAFAFA;
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
@@ -129,15 +129,12 @@ input ~ nav {
       right: 20%;
       padding: 0;
     > li {
-        @include pm {
-          opacity: 1;
-        }
+        @include pm {opacity: 1;}
         list-style-type: none;
         opacity: 0;
         transition: .3s;
         transition-delay: 0s;
       > a {
-
           text-decoration: none;
           text-transform: uppercase;
           font-size: 20px;
@@ -168,7 +165,6 @@ input:checked ~ nav {
 
 //main grid
 main {
-
 
 }
 //footer

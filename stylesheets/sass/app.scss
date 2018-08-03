@@ -4,6 +4,8 @@
 @import 'partials/about';
 @import 'partials/work';
 @import 'partials/header_body_footer';
+@import 'partials/work1';
+
 
 //on page load
 .bodyFadeIn-appear {
@@ -69,33 +71,6 @@
   from {opacity: 1;}
   to {opacity: 0;}
 }
-        //about page -------------------------------------
-        .aboutParagraph {
-          display: flex;
-          flex-direction: column;
-          grid-column: 7 / 12;
-          grid-row: 3 / 9;
-          font-size: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          #firstP {
-            font-weight: $font-bold;
-          }
-        }
-
-        .aboutImg1 {
-
-          display: flex;
-          justify-content: center;
-          img {
-            height: 25em;
-            width: 25em;
-          }
-          grid-column: 2 / 7;
-          grid-row: 3 / 9;
-
-        }
 
 
         //contact page -------------------------------------
