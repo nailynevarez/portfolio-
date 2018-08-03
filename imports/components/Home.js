@@ -64,6 +64,9 @@ export default class Home extends Component {
           activeWork: 'work6',
         });
       }
+
+      //scroll to the top
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
 
 

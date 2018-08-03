@@ -14,14 +14,14 @@
       line-height: 30px; }
     .aboutParagraphs > * span {
       color: #FF4225; }
-  .aboutParagraphs button {
+  .aboutParagraphs div button {
     border-radius: 22px;
     border: 2px solid #FF4225;
     color: #FF4225;
     font-size: 15px;
     background: transparent;
-    padding: 10px; }
-    .aboutParagraphs button:hover {
+    padding: 10px 35px 10px 35px; }
+    .aboutParagraphs div button:hover {
       transition: .7s;
       background-color: #FF4225;
       color: white; }
@@ -29,7 +29,7 @@
 .aboutImg {
   display: flex;
   justify-content: center;
-  margin: 250px auto 100px auto; }
+  margin: 200px auto 100px auto; }
   .aboutImg img {
     height: calc(300px + 20vw);
     width: calc(270px + 20vw); }
@@ -271,6 +271,9 @@ footer {
   flex-direction: column;
   margin-top: 50px;
   text-align: center; }
+  @media (min-width: 650px) {
+    .Work1Text {
+      margin-top: 125px; } }
   .Work1Text h1 {
     font-family: "Merriweather", serif;
     font-weight: 100;
@@ -289,10 +292,26 @@ footer {
 .Work1Img {
   display: flex;
   justify-content: center;
-  margin: 250px auto 100px auto; }
+  margin: 100px auto 100px auto; }
+  @media (min-width: 650px) {
+    .Work1Img {
+      margin: 150px auto 150px auto; } }
   .Work1Img img {
     height: calc(300px + 20vw);
     width: calc(270px + 20vw); }
+
+.Work1links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 20px; }
+  .Work1links a {
+    font-family: "Merriweather", serif;
+    font-size: 120%;
+    margin: 10px 20px; }
+    .Work1links a:hover {
+      color: #FF4225;
+      transition: .7s; }
 
 .bodyFadeIn-appear {
   opacity: 0.01; }

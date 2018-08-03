@@ -14,17 +14,19 @@
       color: $red;
     }
   }
-  button {
-    border-radius: 22px;
-    border: 2px solid $red;
-    color: $red;
-    font-size: 15px;
-    background: transparent;
-    padding: 10px;
-    &:hover{
-      transition: .7s;
-      background-color: $red;
-      color: white;
+  div {
+    button {
+      border-radius: 22px;
+      border: 2px solid $red;
+      color: $red;
+      font-size: 15px;
+      background: transparent;
+      padding: 10px 35px 10px 35px;
+      &:hover{
+        transition: .7s;
+        background-color: $red;
+        color: white;
+      }
     }
   }
 }
@@ -32,7 +34,7 @@
 .aboutImg {
   display: flex;
   justify-content: center;
-  margin: 250px auto 100px auto;
+  margin: 200px auto 100px auto;
   img {
     height: calc(300px + 20vw);
     width: calc(270px + 20vw);

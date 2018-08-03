@@ -36,7 +36,7 @@ export default class About extends Component {
 
       <p className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>Feel free to contact me at: <span>nailynevarez@gmail.com</span></p>
 
-      <button>RESUME</button>
+      <div><button>RESUME</button></div>
 
       </div>
       : null}

@@ -1,4 +1,5 @@
 .Work1Text {
+  @include pm {margin-top: 125px;}
   display: flex;
   flex-direction: column;
   margin-top: 50px;
@@ -18,16 +19,33 @@
     font-weight: 150;
     line-height: 30px;
     margin: 20px auto;
-    width: calc(270px + 20vw);  
+    width: calc(270px + 20vw);
   }
 }
 
 .Work1Img {
+  @include pm {margin: 150px auto 150px auto;}
   display: flex;
   justify-content: center;
-  margin: 250px auto 100px auto;
+  margin: 100px auto 100px auto;
   img {
     height: calc(300px + 20vw);
     width: calc(270px + 20vw);
+  }
+}
+
+.Work1links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 20px;
+  a {
+    font-family: $work-title-font;
+    font-size: 120%;
+    margin: 10px 20px;
+    &:hover {
+      color:$red;
+      transition: .7s;
+    }
   }
 }

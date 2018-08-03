@@ -26,6 +26,8 @@ export default class App extends Component {
       });
     }
     this.checkClick();
+    //scroll to the top
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
   menuClickDesktop = (name) => {
@@ -37,6 +39,8 @@ export default class App extends Component {
         activeItem: name,
       });
     }
+    //scroll to the top
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 
   //if menu is 'home,' refresh the page

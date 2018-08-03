@@ -38,7 +38,16 @@ export default class Work1 extends Component {
       </div>
       : null}
 
-
+      {this.state.showWork1 ?
+      <div className= "Work1links">
+      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>Muxeres</a>
+      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>YaninArt</a>
+      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>Majesty</a>
+      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>ORKids</a>
+      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>MEChA</a>
+      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>Other Project</a>
+      </div>
+      : null}
       </ErrorBoundary>
     );
   }
