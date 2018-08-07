@@ -39,6 +39,8 @@
       text-align: center;
       width: calc(51% - 2vw);
       height: calc(51% - 2vw);
+      margin: 0;
+      padding: 0;
     }
   }
   img {
@@ -46,9 +48,9 @@
     margin-bottom: 17px;
     width: 23em;
     @include pm {
-      width: calc(100% - 2vw);
-      height: calc(100% - 2vw);
-      margin-bottom: 8px;
+      width: calc(104% - 2vw);
+      height: calc(104% - 2vw);
+      margin: 0 0 8px 0;
     }
     &:hover {
       opacity: .5;

@@ -78,16 +78,18 @@
     .image-row1 a, .image-row3 a {
       text-align: center;
       width: calc(51% - 2vw);
-      height: calc(51% - 2vw); } }
+      height: calc(51% - 2vw);
+      margin: 0;
+      padding: 0; } }
   .image-row1 img, .image-row3 img {
     height: 23em;
     margin-bottom: 17px;
     width: 23em; }
     @media (min-width: 650px) {
       .image-row1 img, .image-row3 img {
-        width: calc(100% - 2vw);
-        height: calc(100% - 2vw);
-        margin-bottom: 8px; } }
+        width: calc(104% - 2vw);
+        height: calc(104% - 2vw);
+        margin: 0 0 8px 0; } }
     .image-row1 img:hover, .image-row3 img:hover {
       opacity: .5;
       transition: opacity .5s ease-out;
