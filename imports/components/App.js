@@ -3,6 +3,7 @@ import ErrorBoundary from './ErrorBoundary.js';
 import About from './About.js';
 import Home from './Home.js';
 import '/stylesheets/css/app.css';
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
@@ -82,6 +83,7 @@ export default class App extends Component {
 
     return (
       <ErrorBoundary>
+      <BrowserRouter>
       <ReactCSSTransitionGroup
       transitionName = 'bodyFadeIn'
       transitionAppearTimeout = {1700}
@@ -97,14 +99,14 @@ export default class App extends Component {
           </label>
           <nav>
             <div className = "desktopMenu">
-              <a href = '#' className = {homeActive} onClick = {this.menuClickDesktop.bind(this, 'home')}>Work</a>
+              <Link to = 'work' className = {homeActive} onClick = {this.menuClickDesktop.bind(this, 'home')}>Work</Link>
               <h2 className = "myNameDesktop">NAILY NEVAREZ</h2>
-              <a href = '#' className = {aboutActive} onClick = {this.menuClickDesktop.bind(this, 'about')}>About</a>
+              <Link to = 'about' className = {aboutActive} onClick = {this.menuClickDesktop.bind(this, 'about')}>About</Link>
             </div>
             <h2 className = "myNameMobile">NAILY NEVAREZ</h2>
             <ul className = "mobileList">
-              <li><a href = '#' className = {homeActive} onClick = {this.menuClickMobile.bind(this, 'home')}>Work</a></li>
-              <li><a href = '#' className = {aboutActive} onClick = {this.menuClickMobile.bind(this, 'about')}>About</a></li>
+              <li><Link to = 'work' className = {homeActive} onClick = {this.menuClickMobile.bind(this, 'home')}>Work</Link></li>
+              <li><Link to = 'about' className = {aboutActive} onClick = {this.menuClickMobile.bind(this, 'about')}>About</Link></li>
             </ul>
           </nav>
           <main>
@@ -115,6 +117,7 @@ export default class App extends Component {
           </footer>
         </body>
       </ReactCSSTransitionGroup>
+      </BrowserRouter>
       </ErrorBoundary>
     );
   }

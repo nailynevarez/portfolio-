@@ -11,6 +11,10 @@ export default class Work1 extends Component {
     };
   }
 
+  displayWork2 = () => {
+    
+  }
+
 
 
   render() {
@@ -40,8 +44,8 @@ export default class Work1 extends Component {
 
       {this.state.showWork1 ?
       <div className= "Work1links">
-      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>Muxeres</a>
-      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>YaninArt</a>
+      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>Emerging Leaders Project</a>
+      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'} onClick = {this.displayWork2.bind(this)} >YaninArt</a>
       <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>Majesty</a>
       <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>ORKids</a>
       <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>MEChA</a>
