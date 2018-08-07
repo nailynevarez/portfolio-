@@ -34,13 +34,20 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 5px;
+  a {
+    @include pm {
+      text-align: center;
+      width: calc(51% - 2vw);
+      height: calc(51% - 2vw);
+    }
+  }
   img {
     height: 23em;
     margin-bottom: 17px;
     width: 23em;
     @include pm {
-      width: calc(51% - 2vw);
-      height: calc(51% - 2vw);
+      width: calc(100% - 2vw);
+      height: calc(100% - 2vw);
       margin-bottom: 8px;
     }
     &:hover {
@@ -60,13 +67,20 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 10px 10px 10px;
+  a {
+    @include pm {
+      text-align: center;
+      width: calc(51% - 2vw);
+      height: calc(51% - 2vw);
+    }
+  }
   img {
     width: 23em;
     height: 23em;
     margin-bottom: 17px;
     @include pm {
-      width: calc(51% - 2vw);
-      height: calc(51% - 2vw);
+      width: calc(100% - 2vw);
+      height: calc(100% - 2vw);
       margin-bottom: 0px;
     }
     &:hover {

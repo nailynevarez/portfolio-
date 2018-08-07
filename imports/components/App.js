@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 import ErrorBoundary from './ErrorBoundary.js';
 import About from './About.js';
 import Home from './Home.js';
-import '/stylesheets/css/app.css';
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import Work1 from './Work1.js';
+import Work2 from './Work2.js';
+import Work3 from './Work3.js';
+import Work4 from './Work4.js';
+import Work5 from './Work5.js';
+import Work6 from './Work6.js';
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
@@ -70,17 +75,6 @@ export default class App extends Component {
       aboutActive = 'aboutActive';
     }
 
-    //which menu to show
-    let component = null;
-    switch (this.state.activeItem) {
-      case 'home':
-        component = <Home />;
-        break;
-      case 'about':
-        component = <About />;
-        break;
-    }
-
     return (
       <ErrorBoundary>
       <BrowserRouter>
@@ -99,9 +93,9 @@ export default class App extends Component {
           </label>
           <nav>
             <div className = "desktopMenu">
-              <Link to = 'work' className = {homeActive} onClick = {this.menuClickDesktop.bind(this, 'home')}>Work</Link>
+              <Link to = '/work' className = {homeActive} onClick = {this.menuClickDesktop.bind(this, 'home')}>Work</Link>
               <h2 className = "myNameDesktop">NAILY NEVAREZ</h2>
-              <Link to = 'about' className = {aboutActive} onClick = {this.menuClickDesktop.bind(this, 'about')}>About</Link>
+              <Link to = '/about' className = {aboutActive} onClick = {this.menuClickDesktop.bind(this, 'about')}>About</Link>
             </div>
             <h2 className = "myNameMobile">NAILY NEVAREZ</h2>
             <ul className = "mobileList">
@@ -110,7 +104,16 @@ export default class App extends Component {
             </ul>
           </nav>
           <main>
-           {component}
+            <Switch>
+              <Route exact path='/work' component={Home}/>
+              <Route exact path='/about' component={About}/>
+              <Route exact path='/work/work1' component={Work1}/>
+              <Route exact path='/work/work2' component={Work2}/>
+              <Route exact path='/work/work3' component={Work3}/>
+              <Route exact path='/work/work4' component={Work4}/>
+              <Route exact path='/work/work5' component={Work5}/>
+              <Route exact path='/work/work6' component={Work6}/>
+            </Switch>
           </main>
           <footer>
             Copyright &copy; Naily Nevarez
