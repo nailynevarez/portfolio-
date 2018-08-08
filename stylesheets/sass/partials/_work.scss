@@ -26,7 +26,6 @@
     }
 }
 
-.name-row1, .name-row2, .name-row3, .name-row4 {display: none;}
 
 //two column rows
 .image-row1, .image-row3 {
@@ -35,25 +34,26 @@
   justify-content: space-around;
   margin: 0 5px;
   a {
+    height: 23em;
+    margin: 0;
+    width: 23em;
+    background-color: black;
     @include pm {
       text-align: center;
-      width: calc(51% - 2vw);
-      height: calc(51% - 2vw);
-      margin: 0;
-      padding: 0;
+      width: calc(50% - 2vw);
+      height: calc(50% - 2vw);
     }
   }
   img {
     height: 23em;
-    margin-bottom: 17px;
+    margin: 0;
     width: 23em;
     @include pm {
-      width: calc(104% - 2vw);
-      height: calc(104% - 2vw);
-      margin: 0 0 8px 0;
+      width: 100%;
+      height: 100%;
     }
     &:hover {
-      opacity: .5;
+      opacity: .3;
       transition: opacity .5s ease-out;
       -moz-transition: opacity .5s ease-out;
       -webkit-transition: opacity .5s ease-out;
@@ -62,14 +62,18 @@
   }
 }
 
-//one column rows
-.image-row2, .image-row4 {
-  @include pm {background-color: black;}
+
+//one column rows ---- mobile
+.image-row2-mobile, .image-row4-mobile{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 10px 10px 10px;
   a {
+    height: 23em;
+    margin: 0;
+    width: 23em;
+    background-color: black;
     @include pm {
       text-align: center;
       width: calc(51% - 2vw);
@@ -79,14 +83,54 @@
   img {
     width: 23em;
     height: 23em;
-    margin-bottom: 17px;
+    margin: 0;
     @include pm {
-      width: calc(100% - 2vw);
-      height: calc(100% - 2vw);
+      display: none;
+      width: 100%;
+      height: 100%;
       margin-bottom: 0px;
     }
     &:hover {
-      opacity: .5;
+      opacity: .3;
+      transition: opacity .5s ease-out;
+      -moz-transition: opacity .5s ease-out;
+      -webkit-transition: opacity .5s ease-out;
+      -o-transition: opacity .5s ease-out;
+    }
+  }
+}
+
+//one-column rows --- desktop
+.image-row2-desktop, .image-row4-desktop {
+  @include pm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10px 10px 10px;
+  }
+  display: none;
+  a {
+    height: 23em;
+    margin: 0;
+    width: 23em;
+    background-color: black;
+    @include pm {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  img {
+    width: 23em;
+    height: 23em;
+    margin-bottom: 17px;
+    @include pm {
+      width: calc(102% - 2vw);
+      height: calc(102% - 2vw);
+      margin-bottom: 0px;
+    }
+    &:hover {
+      opacity: .3;
       transition: opacity .5s ease-out;
       -moz-transition: opacity .5s ease-out;
       -webkit-transition: opacity .5s ease-out;

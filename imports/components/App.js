@@ -8,7 +8,7 @@ import Work3 from './Work3.js';
 import Work4 from './Work4.js';
 import Work5 from './Work5.js';
 import Work6 from './Work6.js';
-import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Link, Switch, Redirect } from "react-router-dom";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
@@ -98,6 +98,7 @@ export default class App extends Component {
           </nav>
           <main>
             <Switch>
+              <Route exact path='/' component ={Home} />
               <Route exact path='/work' component={Home}/>
               <Route exact path='/about' component={About}/>
               <Route exact path='/work/work1' component={Work1}/>
