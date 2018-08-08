@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import ErrorBoundary from './ErrorBoundary.js'
+import ErrorBoundary from './ErrorBoundary.js';
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import '/stylesheets/css/app.css';
 
 
@@ -12,7 +13,7 @@ export default class Work1 extends Component {
   }
 
   displayWork2 = () => {
-    
+
   }
 
 
@@ -20,7 +21,6 @@ export default class Work1 extends Component {
   render() {
     return (
       <ErrorBoundary>
-      {this.state.showWork1 ?
       <div className= "Work1Text">
       <h1>UO Muxeres</h1>
       <h3>LOGO DESIGN</h3>
@@ -34,22 +34,18 @@ export default class Work1 extends Component {
         Some more text, maybe a link to something or what my role was in a team.
       </p>
       </div>
-      : null}
-
-      {this.state.showWork1 ?
       <div className= "Work1Img">
       <img src = '/images/muxeres.png' className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}/>
       </div>
-      : null}
 
       {this.state.showWork1 ?
       <div className= "Work1links">
-      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>Emerging Leaders Project</a>
-      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'} onClick = {this.displayWork2.bind(this)} >YaninArt</a>
-      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>Majesty</a>
-      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>ORKids</a>
-      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>MEChA</a>
-      <a className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}>Other Project</a>
+      <Link to = '/work/work1'>Work 1</Link>
+      <Link to = '/work/work2'>Work 2</Link>
+      <Link to = '/work/work3'>Work 3</Link>
+      <Link to = '/work/work4'>Work 4</Link>
+      <Link to = '/work/work5'>Work 5</Link>
+      <Link to = '/work/work6'>Work 5</Link>
       </div>
       : null}
       </ErrorBoundary>

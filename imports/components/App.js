@@ -23,14 +23,9 @@ export default class App extends Component {
 
   //define which menu was clicked
   menuClickMobile = (name) => {
-    if (name == 'home') {
-      this.reloadPage();
-    }
-    else {
       this.setState({
         activeItem: name,
       });
-    }
     this.checkClick();
     //scroll to the top
     document.body.scrollTop = document.documentElement.scrollTop = 0;
@@ -50,9 +45,7 @@ export default class App extends Component {
   }
 
   //if menu is 'home,' refresh the page
-  reloadPage = () => {
-    window.location.reload();
-  }
+
 
   checkClick = () => {
     this.setState({
