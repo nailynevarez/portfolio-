@@ -38,24 +38,48 @@ export default class Home extends Component {
           <p> &#8212; I&#39;m a designer, illustrator, and web developer using her creative skills for greater social change.</p>
         </div>
         <div className = 'image-row1'>
-          <Link to = "/work/work1"><img src = '/images/rose.png'  onClick = {this.displayWork.bind(this, 'work1')} /></Link>
-          <Link to = "/work/work2"><img src = '/images/fist.png' onClick = {this.displayWork.bind(this, 'work2')}/></Link>
+          <Link to = "/work/work1">
+            <img src = '/images/rose.png'  onClick = {this.displayWork.bind(this, 'work1')} />
+            <p>Raza Unida Conference</p>
+          </Link>
+          <Link to = "/work/work2">
+            <img src = '/images/fist.png' onClick = {this.displayWork.bind(this, 'work2')}/>
+            <p>Muxeres</p>
+          </Link>
         </div>
         <div className = 'image-row2-mobile'>
-          <Link to = "/work/work3"><img src = '/images/world.png'  onClick = {this.displayWork.bind(this, 'work3')}/></Link>
+          <Link to = "/work/work3">
+            <img src = '/images/world.png'  onClick = {this.displayWork.bind(this, 'work3')}/>
+            <p>Women for Women</p>
+          </Link>
         </div>
         <div className = 'image-row2-desktop'>
-          <Link to = "/work/work3"><img src = '/images/world2.png' onClick = {this.displayWork.bind(this, 'work3')}/></Link>
+          <Link to = "/work/work3">
+            <img src = '/images/world2.png' onClick = {this.displayWork.bind(this, 'work3')}/>
+            <p>Women for Women</p>
+          </Link>
         </div>
         <div className = 'image-row3'>
-          <Link to = "/work/work5"><img src = '/images/oregon.png' onClick = {this.displayWork.bind(this, 'work5')}/></Link>
-          <Link to = "/work/work4"><img src = '/images/bottle.png' onClick = {this.displayWork.bind(this, 'work4')}/></Link>
+          <Link to = "/work/work5">
+            <img src = '/images/oregon.png' onClick = {this.displayWork.bind(this, 'work5')}/>
+            <p>OR Kids</p>
+          </Link>
+          <Link to = "/work/work4">
+            <img src = '/images/bottle.png' onClick = {this.displayWork.bind(this, 'work4')}/>
+            <p>Dear Future Community Grant</p>
+          </Link>
         </div>
         <div className = 'image-row4-mobile'>
-          <Link to = "/work/work6"><img src = '/images/paint.png' onClick = {this.displayWork.bind(this, 'work6')}/></Link>
+          <Link to = "/work/work6">
+            <img src = '/images/paint.png' onClick = {this.displayWork.bind(this, 'work6')}/>
+            <p>Yanin Art</p>
+          </Link>
         </div>
         <div className = 'image-row4-desktop'>
-          <Link to = "/work/work6"><img src = '/images/paint2.png' onClick = {this.displayWork.bind(this, 'work6')}/></Link>
+          <Link to = "/work/work6">
+            <img src = '/images/paint2.png' onClick = {this.displayWork.bind(this, 'work6')}/>
+            <p>Yanin Art</p>
+          </Link>
         </div>
       </ErrorBoundary>
     );
