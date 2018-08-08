@@ -92,8 +92,8 @@ export default class App extends Component {
             </div>
             <h2 className = "myNameMobile">NAILY NEVAREZ</h2>
             <ul className = "mobileList">
-              <li><Link to = 'work' className = {homeActive} onClick = {this.menuClickMobile.bind(this, 'home')}>Work</Link></li>
-              <li><Link to = 'about' className = {aboutActive} onClick = {this.menuClickMobile.bind(this, 'about')}>About</Link></li>
+              <li><Link to = '/work' className = {homeActive} onClick = {this.menuClickMobile.bind(this, 'home')}>Work</Link></li>
+              <li><Link to = '/about' className = {aboutActive} onClick = {this.menuClickMobile.bind(this, 'about')}>About</Link></li>
             </ul>
           </nav>
           <main>

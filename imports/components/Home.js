@@ -35,7 +35,7 @@ export default class Home extends Component {
     return (
       <ErrorBoundary>
         <div className = "home-intro">
-          <p> &#8212; I&#39;m a Graphic designer, Illustrator, and Web developer using her creative skills for greater social change.</p>
+          <p> &#8212; I&#39;m a designer, illustrator, and web developer using her creative skills for greater social change.</p>
         </div>
         <div className = 'image-row1'>
           <Link to = "/work/work1"><img src = '/images/muxeres.png' title = "Graphic Design"  onClick = {this.displayWork.bind(this, 'work1')} /></Link>
