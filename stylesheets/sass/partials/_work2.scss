@@ -1,4 +1,4 @@
-.Work1Text {
+.Work2Text {
   @include pm {margin-top: 125px;}
   display: flex;
   flex-direction: column;
@@ -19,11 +19,11 @@
     font-weight: 150;
     line-height: 30px;
     margin: 20px auto;
-    width: calc(400px + 20vw);
+    width: calc(270px + 20vw);
   }
 }
 
-.Work1Img {
+.Work2Img {
   @include pm {margin: 150px auto 150px auto;}
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@
   }
 }
 
-.Work1links {
+.Work2links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

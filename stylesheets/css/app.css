@@ -401,7 +401,7 @@ footer {
     font-weight: 150;
     line-height: 30px;
     margin: 20px auto;
-    width: calc(270px + 20vw); }
+    width: calc(400px + 20vw); }
 
 .Work1Img {
   display: flex;
@@ -424,6 +424,53 @@ footer {
     font-size: 120%;
     margin: 10px 20px; }
     .Work1links a:hover {
+      color: #FF4225;
+      transition: .7s; }
+
+.Work2Text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  text-align: center; }
+  @media (min-width: 650px) {
+    .Work2Text {
+      margin-top: 125px; } }
+  .Work2Text h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 100;
+    font-size: 280%;
+    margin: 0px 0; }
+  .Work2Text h3 {
+    color: #FF4225;
+    margin: 20px 0 20px 0; }
+  .Work2Text > p {
+    color: grey;
+    font-weight: 150;
+    line-height: 30px;
+    margin: 20px auto;
+    width: calc(270px + 20vw); }
+
+.Work2Img {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto 100px auto; }
+  @media (min-width: 650px) {
+    .Work2Img {
+      margin: 150px auto 150px auto; } }
+  .Work2Img img {
+    height: calc(300px + 20vw);
+    width: calc(270px + 20vw); }
+
+.Work2links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 20px; }
+  .Work2links a {
+    font-family: "Merriweather", serif;
+    font-size: 120%;
+    margin: 10px 20px; }
+    .Work2links a:hover {
       color: #FF4225;
       transition: .7s; }
 
