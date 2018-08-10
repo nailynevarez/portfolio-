@@ -21,12 +21,12 @@ export default class Work6 extends Component {
       <h1>Yanin Art</h1>
       <h3>FOUNDER</h3>
       <p className = {this.state.showWork6 ? 'fadeIn' : 'fadeOut'}>
-      In the summer of 2015, I began <a href = "http://www.etsy.com/shop/Yaninart">Yanin Art</a> - a shop that specializes in
+      In the summer of 2015, I began <a href = "http://www.etsy.com/shop/Yaninart" target="_blank">Yanin Art</a> - a shop that specializes in
       creating acrylic paintings. While I love taking custom requests, many of my original
       creations depict cultures, my own interests, and advocate for social justice and equality.
       </p>
       <p className = {this.state.showWork6 ? 'fadeIn' : 'fadeOut'}>
-      <b>Role:</b> <br/>
+      <b>My role:</b> <br/>
       Painter &
       Manager of all Yanin Art products
       </p>

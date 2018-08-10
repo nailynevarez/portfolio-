@@ -170,7 +170,6 @@
   .image-row2-mobile p, .image-row4-mobile p {
     left: 50%;
     position: absolute;
-    text-align: center;
     top: 50%;
     transform: translate(-50%, -50%); }
   .image-row2-mobile img, .image-row4-mobile img {
@@ -472,7 +471,7 @@ footer {
       .Work1Img2-Desktop img {
         width: calc(100% - 10vw); } }
 
-.boldP {
+.Work1boldP {
   font-family: "Merriweather", serif;
   font-size: 20px;
   font-weight: 100;
@@ -480,11 +479,11 @@ footer {
   line-height: 30px;
   text-align: center; }
   @media (min-width: 769px) {
-    .boldP {
+    .Work1boldP {
       font-size: 35px;
       line-height: 50px;
       margin: 200px calc(50px + 15vw); } }
-  .boldP span {
+  .Work1boldP span {
     font-family: "Merriweather", serif;
     font-weight: 700; }
 
@@ -518,22 +517,48 @@ footer {
     color: #FF4225;
     margin: 20px 0 20px 0; }
   .Work2Text > p {
-    color: grey;
+    color: black;
     font-weight: 150;
     line-height: 30px;
     margin: 20px auto;
     width: calc(270px + 20vw); }
+    .Work2Text > p span {
+      color: grey; }
+  .Work2Text a {
+    color: #FF4225; }
+    .Work2Text a:hover {
+      color: #B21F1E; }
 
-.Work2Img {
+.Work2ImgsLogo {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin: 100px auto 100px auto; }
-  @media (min-width: 650px) {
-    .Work2Img {
-      margin: 150px auto 150px auto; } }
-  .Work2Img img {
-    height: calc(300px + 20vw);
-    width: calc(270px + 20vw); }
+  margin: 100px 0; }
+  .Work2ImgsLogo img {
+    height: calc(100px + 13vw);
+    width: calc(100px + 13vw); }
+    @media (min-width: 990px) {
+      .Work2ImgsLogo img {
+        height: calc(150px + 13vw);
+        width: calc(150px + 13vw); } }
+  .Work2ImgsLogo img:not(:last-child) {
+    margin-right: 20px; }
+
+.Work2boldP {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 100px 50px;
+  line-height: 30px;
+  text-align: center; }
+  @media (min-width: 769px) {
+    .Work2boldP {
+      font-size: 35px;
+      line-height: 50px;
+      margin: 200px calc(50px + 15vw); } }
+  .Work2boldP span {
+    font-family: "Merriweather", serif;
+    font-weight: 700; }
 
 .Work2links {
   display: flex;
@@ -547,6 +572,12 @@ footer {
     .Work2links a:hover {
       color: #FF4225;
       transition: .7s; }
+
+.Work2ImgSocial {
+  margin: 0 calc(25px + 5vw); }
+  .Work2ImgSocial img {
+    height: 100%;
+    width: 100%; }
 
 .Work4Text {
   display: flex;

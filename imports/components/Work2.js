@@ -19,19 +19,35 @@ export default class Work2 extends Component {
       <ErrorBoundary>
       <div className= "Work2Text">
       <h1>Majesty</h1>
-      <h3>ART DIRECTOR</h3>
+      <h3>ART DIRECTION</h3>
       <p className = {this.state.showWork2 ? 'fadeIn' : 'fadeOut'}>
-      Nominavi incorrupte te quo, id mei adipisci antiopam. Saepe iudico
-      commodo ut usu, et impetus expetenda referrentur sed, te soluta prompta
-      impedit sit. Justo eripuit interesset eos ad, pri cu assueverit concludaturque.
-      Erroribus laboramus nec no, no qui nihil graece percipitur.
+      <a href = "https://majestydigital.org" target="_blank">Majesty Digital</a> is a digital platform for women of color to share their lived experiences. Through
+      digital media, we celebrate our differences and share commonality between them.
       </p>
       <p className = {this.state.showWork2 ? 'fadeIn' : 'fadeOut'}>
-        Some more text, maybe a link to something or what my role was in a team.
+        <b>My role:</b> <br/>
+        Art Director <br/>
+      </p>
+      <p className = {this.state.showWork2 ? 'fadeIn' : 'fadeOut'}>
+      <b>Team:</b> <br/>
+      Srushti Kumat <span>(Co-founder)</span> <br/>
+      Yasi Milani <span>(Co-founder)</span> <br/>
+      Cassidy Kusumoto <span>(Videographer)</span> <br/>
+      Hanaa Mohammed <span>(Story & Partnership Outreach Liason)</span> <br/>
+      Robyn Wright <span>(Copy Editor)</span> <br/>
+      Milana Orth <span>(Media Planner & Writer)</span><br/>
+      Neeka Safdari <span>(Grant Writer)</span><br/>
+      Nana Nguyen <span>(Marketing Director)</span>
       </p>
       </div>
-
-
+      <div className= "Work2ImgsLogo">
+        <img src = '/images/majesty2.png' className = {this.state.showWork2  ? 'fadeIn' : 'fadeOut'}/>
+        <img src = '/images/majesty1.png' className = {this.state.showWork2  ? 'fadeIn' : 'fadeOut'}/>
+      </div>
+      <p className = "Work2boldP">A logo was created to represent the <span>connection</span> Majesty creates among women of color.</p>
+      <div className= "Work2ImgSocial">
+        <img src = '/images/majesty3.png' className = {this.state.showWork2  ? 'fadeIn' : 'fadeOut'}/>
+      </div>
       <div className= "Work2links">
       <Link to = '/work/work1'>Raza Unida Conference</Link>
       <Link to = '/work/work2'>Majesty</Link>

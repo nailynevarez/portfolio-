@@ -15,23 +15,57 @@
     margin: 20px 0 20px 0;
   }
   > p {
-    color: grey;
+    color: black;
     font-weight: 150;
     line-height: 30px;
     margin: 20px auto;
     width: calc(270px + 20vw);
+    span {
+      color: grey;
+    }
+  }
+  a {
+    color: $red;
+    &:hover {
+      color: $dark;
+    }
   }
 }
 
-.Work2Img {
-  @include pm {margin: 150px auto 150px auto;}
+.Work2ImgsLogo {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin: 100px auto 100px auto;
+  margin: 100px 0;
   img {
-    height: calc(300px + 20vw);
-    width: calc(270px + 20vw);
+    @include sl {
+      height: calc(150px + 13vw);
+      width: calc(150px + 13vw)
+    }
+    height: calc(100px + 13vw);
+    width: calc(100px + 13vw);
   }
+  img:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.Work2boldP {
+  @include md {
+    font-size: 35px;
+    line-height: 50px;
+    margin: 200px calc(50px + 15vw);
+  }
+  span {
+    font-family: $work-title-font;
+    font-weight: $font-bold;
+  }
+  font-family: $work-title-font;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 100px 50px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .Work2links {
@@ -48,4 +82,12 @@
       transition: .7s;
     }
   }
+}
+
+.Work2ImgSocial {
+  margin: 0 calc(25px + 5vw);
+   img {
+     height: 100%;
+     width: 100%;
+   }
 }

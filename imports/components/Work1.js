@@ -35,19 +35,19 @@ export default class Work1 extends Component {
       </p>
       </div>
       <div className= "Work1Img1-Desktop">
-      <img src = '/images/razaunida1-desktop.png' className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}/>
+      <img src = '/images/razaunida1-desktop.png' className = {this.state.showWork1 ? 'fadeIn' : 'fadeOut'}/>
       </div>
       <div className= "Work1Img1-Mobile">
-      <img src = '/images/razaunida1-mobile.png' className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}/>
+      <img src = '/images/razaunida1-mobile.png' className = {this.state.showWork1 ? 'fadeIn' : 'fadeOut'}/>
       </div>
       <div className= "Work1Img2-Desktop">
-      <img src = '/images/razaunida2-desktop.png' className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}/>
+      <img src = '/images/razaunida2-desktop.png' className = {this.state.showWork1 ? 'fadeIn' : 'fadeOut'}/>
       </div>
       <div className= "Work1Img2-Mobile">
-      <img src = '/images/razaunida2-mobile.png' className = {this.state.showAbout ? 'fadeIn' : 'fadeOut'}/>
+      <img src = '/images/razaunida2-mobile.png' className = {this.state.showWork1 ? 'fadeIn' : 'fadeOut'}/>
       </div>
-      <p className ="boldP">I collaborated with conference coordinators to create a design that ultimately <span>excited</span> the youth and <span>united</span> our community.</p>
-      <p className ="boldP"> The design was printed on over <span>300</span> shirts and was worn by attendees, volunteers, and workshop leaders at the conference.</p>
+      <p className ="Work1boldP">I collaborated with conference coordinators to create a design that ultimately <span>excited</span> the youth and <span>united</span> our community.</p>
+      <p className ="Work1boldP"> The design was printed on over <span>300</span> shirts and was worn by attendees, volunteers, and workshop leaders at the conference.</p>
 
       <div className= "Work1links">
       <Link to = '/work/work1'>Raza Unida Conference</Link>
