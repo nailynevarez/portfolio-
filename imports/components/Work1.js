@@ -22,11 +22,11 @@ export default class Work1 extends Component {
       <p className = {this.state.showWork1 ? 'fadeIn' : 'fadeOut'}>
       The Raza Unida Youth Conference is an annual conference held at the University of
       Oregon by the student organization MEChA. This conference invites high school students
-      of latino heritage from all across Oregon to the UO campus to encourage, inspire and empower them to pursue
+      of latinx heritage from all across Oregon to the UO campus to encourage, inspire and empower them to pursue
       a higher education.
       <br/>
       <br/>
-      The coordinators of the 14th annual conference had established the theme “Floreciendo Juntos” (Flourishing Together),
+      The coordinators of the 14th annual conference established the theme “Floreciendo Juntos” (Flourishing Together),
        and were in search of a shirt design that would embody growth and resilience.
       </p>
       <p className = {this.state.showWork1 ? 'fadeIn' : 'fadeOut'}>
