@@ -1,4 +1,4 @@
-.Work1Text {
+.Work6Text {
   @include pm {margin-top: 125px;}
   display: flex;
   flex-direction: column;
@@ -15,68 +15,79 @@
     margin: 20px 0 20px 0;
   }
   > p {
-    @include pm {width: calc(420px + 20vw);}
     color: black;
     font-weight: 150;
-    line-height: 35px;
+    line-height: 30px;
     margin: 20px auto;
     width: calc(270px + 20vw);
   }
-}
-
-.Work1Img1-Mobile {
-  @include pm {display: none;}
-  display: flex;
-  justify-content: center;
-  margin: 100px auto 10px auto;
-  img {
-    height: calc(100% - 5vw);
-    width: calc(100% - 5vw);
-  }
-}
-.Work1Img2-Mobile {
-  @include pm {display: none;}
-  display: flex;
-  justify-content: center;
-  img {
-    height: calc(100% - 5vw);
-    width: calc(100% - 5vw);
-  }
-}
-
-.Work1Img1-Desktop {
-  @include pm {
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
-    margin: 100px auto 10px auto;
-    img {
-      @include pm {width: calc(100% - 10vw);}
-      height: calc(100% - 2vw);
-      width: calc(100% - 2vw);
+  a {
+    color: red;
+    &:hover {
+      color: $dark;
     }
   }
-  display: none;
 }
-.Work1Img2-Desktop {
-  @include pm {
+
+.Work6ImgReviews-Mobile {
+  @include sl {display:none;}
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 100px auto;
+  img {
+    margin: 15px 15px;
+    height: 380px;
+    width: 280px;
+  }
+}
+
+.Work6ImgReviews-Desktop {
+  @include sl {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 0;
+    margin: 100px 0;
     img {
-      @include pm {width: calc(100% - 10vw);}
-      height: calc(100% - 2vw);
-      width: calc(100% - 2vw);
+      margin-bottom: 30px;
+      height: calc(330px + 13vw);
+      width: calc(580px + 13vw);
     }
   }
   display: none;
 }
 
-.boldP {
+.Work6Imgs {
+  @include sl{margin: 100px calc(50px + 10vw)}
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  img {
+    margin: 15px 15px;
+    width: calc(150px);
+    height: calc(150px);
+  }
+}
+
+.Work6Img1 {
+  @include md {margin: 100px calc(10px + 20vw);}
+  margin: 0 calc(10px + 6vw);
+  img {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.Work6boldP {
   @include md {
     font-size: 35px;
     line-height: 50px;
-    margin: 200px calc(50px + 15vw);
+    margin: 100px calc(50px + 15vw) 0 calc(50px + 15vw) ;
   }
   span {
     font-family: $work-title-font;
@@ -85,16 +96,16 @@
   font-family: $work-title-font;
   font-size: 20px;
   font-weight: 100;
-  margin: 100px 50px;
+  margin: 50px 50px;
   line-height: 30px;
   text-align: center;
 }
 
-.Work1links {
+.Work6links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 15px;
+    margin: 0 20px;
   a {
     font-family: $work-title-font;
     font-size: 120%;

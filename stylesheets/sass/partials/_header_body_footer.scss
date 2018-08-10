@@ -107,6 +107,8 @@ input ~ nav {
     a {
       @include pm {display: flex}
       display: none;
+      font-family: $work-title-font;
+      font-weight: 100;
       margin: 0 50px;
     }
   }

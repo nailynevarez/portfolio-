@@ -35,7 +35,7 @@ export default class Home extends Component {
     return (
       <ErrorBoundary>
         <div className = "home-intro">
-          <p> &#8212; I&#39;m a designer, illustrator, and web developer using her creative skills for greater social change.</p>
+          <p> &#8212; I&#39;m a designer, illustrator, and web developer using her creative skills for social change.</p>
         </div>
         <div className = 'image-row1'>
           <Link to = "/work/work1">
@@ -44,7 +44,7 @@ export default class Home extends Component {
           </Link>
           <Link to = "/work/work2">
             <img src = '/images/fist.png' onClick = {this.displayWork.bind(this, 'work2')}/>
-            <p>Muxeres</p>
+            <p>Majesty</p>
           </Link>
         </div>
         <div className = 'image-row2-mobile'>
@@ -60,11 +60,11 @@ export default class Home extends Component {
           </Link>
         </div>
         <div className = 'image-row3'>
-          <Link to = "/work/work5">
+          <Link to = "/work/work4">
             <img src = '/images/oregon.png' onClick = {this.displayWork.bind(this, 'work5')}/>
             <p>OR Kids</p>
           </Link>
-          <Link to = "/work/work4">
+          <Link to = "/work/work5">
             <img src = '/images/bottle.png' onClick = {this.displayWork.bind(this, 'work4')}/>
             <p>Dear Future Community Grant</p>
           </Link>

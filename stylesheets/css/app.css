@@ -77,7 +77,11 @@
     height: 23em;
     margin: 0;
     position: relative;
-    width: 23em; }
+    width: 23em;
+    transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -webkit-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out; }
     @media (min-width: 650px) {
       .image-row1 a, .image-row3 a {
         text-align: center;
@@ -109,17 +113,17 @@
     display: block;
     height: 23em;
     margin: 0;
-    width: 23em; }
+    width: 23em;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out; }
     @media (min-width: 650px) {
       .image-row1 img, .image-row3 img {
         width: 100%;
         height: 100%; } }
     .image-row1 img:hover, .image-row3 img:hover {
-      opacity: .3;
-      transition: opacity .5s ease-out;
-      -moz-transition: opacity .5s ease-out;
-      -webkit-transition: opacity .5s ease-out;
-      -o-transition: opacity .5s ease-out; }
+      opacity: .3; }
 
 .image-row2-mobile, .image-row4-mobile {
   display: flex;
@@ -135,7 +139,11 @@
     position: relative;
     height: 23em;
     margin: 0;
-    width: 23em; }
+    width: 23em;
+    transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -webkit-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out; }
     @media (min-width: 650px) {
       .image-row2-mobile a, .image-row4-mobile a {
         text-align: center;
@@ -166,13 +174,13 @@
   .image-row2-mobile img, .image-row4-mobile img {
     height: 23em;
     margin: 0;
-    width: 23em; }
+    width: 23em;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out; }
     .image-row2-mobile img:hover, .image-row4-mobile img:hover {
-      opacity: .3;
-      transition: opacity .5s ease-out;
-      -moz-transition: opacity .5s ease-out;
-      -webkit-transition: opacity .5s ease-out;
-      -o-transition: opacity .5s ease-out; }
+      opacity: .3; }
 
 .image-row2-desktop, .image-row4-desktop {
   display: none; }
@@ -181,14 +189,18 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      margin: 16px 10px; } }
+      margin: 25px 10px; } }
   .image-row2-desktop p, .image-row4-desktop p {
     display: none; }
   .image-row2-desktop a, .image-row4-desktop a {
     height: 23em;
     margin: 0;
     position: relative;
-    width: 23em; }
+    width: 23em;
+    transition: background-color .5s ease-out;
+    -moz-transition: background-color .5s ease-out;
+    -webkit-transition: background-color .5s ease-out;
+    -o-transition: background-color .5s ease-out; }
     @media (min-width: 650px) {
       .image-row2-desktop a, .image-row4-desktop a {
         height: calc(100% - 2vw);
@@ -215,18 +227,18 @@
     display: block;
     width: 23em;
     height: 23em;
-    margin-bottom: 17px; }
+    margin-bottom: 17px;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out; }
     @media (min-width: 650px) {
       .image-row2-desktop img, .image-row4-desktop img {
         height: calc(102% - 2vw);
         width: calc(102% - 2vw);
         margin-bottom: 0px; } }
     .image-row2-desktop img:hover, .image-row4-desktop img:hover {
-      opacity: .3;
-      transition: opacity .5s ease-out;
-      -moz-transition: opacity .5s ease-out;
-      -webkit-transition: opacity .5s ease-out;
-      -o-transition: opacity .5s ease-out; }
+      opacity: .3; }
 
 html, body {
   background-color: #FAFAFA;
@@ -332,6 +344,8 @@ input ~ nav {
       background-color: #FAFAFA; } }
   input ~ nav .desktopMenu a {
     display: none;
+    font-family: "Merriweather", serif;
+    font-weight: 100;
     margin: 0 50px; }
     @media (min-width: 650px) {
       input ~ nav .desktopMenu a {
@@ -397,28 +411,86 @@ footer {
     color: #FF4225;
     margin: 20px 0 20px 0; }
   .Work1Text > p {
-    color: grey;
+    color: black;
     font-weight: 150;
-    line-height: 30px;
+    line-height: 35px;
     margin: 20px auto;
-    width: calc(400px + 20vw); }
+    width: calc(270px + 20vw); }
+    @media (min-width: 650px) {
+      .Work1Text > p {
+        width: calc(420px + 20vw); } }
 
-.Work1Img {
+.Work1Img1-Mobile {
   display: flex;
   justify-content: center;
-  margin: 100px auto 100px auto; }
+  margin: 100px auto 10px auto; }
   @media (min-width: 650px) {
-    .Work1Img {
-      margin: 150px auto 150px auto; } }
-  .Work1Img img {
-    height: calc(300px + 20vw);
-    width: calc(270px + 20vw); }
+    .Work1Img1-Mobile {
+      display: none; } }
+  .Work1Img1-Mobile img {
+    height: calc(100% - 5vw);
+    width: calc(100% - 5vw); }
+
+.Work1Img2-Mobile {
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 650px) {
+    .Work1Img2-Mobile {
+      display: none; } }
+  .Work1Img2-Mobile img {
+    height: calc(100% - 5vw);
+    width: calc(100% - 5vw); }
+
+.Work1Img1-Desktop {
+  display: none; }
+  @media (min-width: 650px) {
+    .Work1Img1-Desktop {
+      display: flex;
+      justify-content: center;
+      margin-top: 200px;
+      margin: 100px auto 10px auto; }
+      .Work1Img1-Desktop img {
+        height: calc(100% - 2vw);
+        width: calc(100% - 2vw); } }
+    @media (min-width: 650px) and (min-width: 650px) {
+      .Work1Img1-Desktop img {
+        width: calc(100% - 10vw); } }
+
+.Work1Img2-Desktop {
+  display: none; }
+  @media (min-width: 650px) {
+    .Work1Img2-Desktop {
+      display: flex;
+      justify-content: center;
+      margin: 0; }
+      .Work1Img2-Desktop img {
+        height: calc(100% - 2vw);
+        width: calc(100% - 2vw); } }
+    @media (min-width: 650px) and (min-width: 650px) {
+      .Work1Img2-Desktop img {
+        width: calc(100% - 10vw); } }
+
+.boldP {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 100px 50px;
+  line-height: 30px;
+  text-align: center; }
+  @media (min-width: 769px) {
+    .boldP {
+      font-size: 35px;
+      line-height: 50px;
+      margin: 200px calc(50px + 15vw); } }
+  .boldP span {
+    font-family: "Merriweather", serif;
+    font-weight: 700; }
 
 .Work1links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 20px; }
+  margin: 0 15px; }
   .Work1links a {
     font-family: "Merriweather", serif;
     font-size: 120%;
@@ -471,6 +543,214 @@ footer {
     font-size: 120%;
     margin: 10px 20px; }
     .Work2links a:hover {
+      color: #FF4225;
+      transition: .7s; }
+
+.Work4Text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  text-align: center; }
+  @media (min-width: 650px) {
+    .Work4Text {
+      margin-top: 125px; } }
+  .Work4Text h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 100;
+    font-size: 280%;
+    margin: 0px 0; }
+  .Work4Text h3 {
+    color: #FF4225;
+    margin: 20px 0 20px 0; }
+  .Work4Text > p {
+    color: black;
+    font-weight: 150;
+    line-height: 35px;
+    margin: 20px auto;
+    width: calc(270px + 20vw); }
+    @media (min-width: 650px) {
+      .Work4Text > p {
+        width: calc(470px + 20vw); } }
+
+.Work4Img1-Mobile {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 10px auto; }
+  .Work4Img1-Mobile img {
+    height: calc(100% - 35vw);
+    width: calc(100% - 35vw); }
+    @media (min-width: 769px) {
+      .Work4Img1-Mobile img {
+        width: calc(100% - 55vw); } }
+
+.Work4Imgs-Mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0px; }
+  @media (min-width: 650px) {
+    .Work4Imgs-Mobile {
+      margin: 100px 0; } }
+  .Work4Imgs-Mobile img {
+    margin: 0 40px;
+    width: calc(100px + 10vw);
+    height: calc(100px + 10vw); }
+    @media (min-width: 401px) {
+      .Work4Imgs-Mobile img {
+        margin: 0 100px; } }
+    @media (min-width: 650px) {
+      .Work4Imgs-Mobile img {
+        margin: 0 20px; } }
+
+.Work4Img2-Desktop {
+  display: none; }
+  @media (min-width: 650px) {
+    .Work4Img2-Desktop {
+      display: flex;
+      justify-content: center;
+      margin: 0; }
+      .Work4Img2-Desktop img {
+        height: calc(100% - 2vw);
+        width: calc(100% - 2vw); } }
+    @media (min-width: 650px) and (min-width: 650px) {
+      .Work4Img2-Desktop img {
+        width: calc(100% - 10vw); } }
+
+.Work4boldP {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 50px 50px;
+  line-height: 30px;
+  text-align: center; }
+  @media (min-width: 769px) {
+    .Work4boldP {
+      font-size: 35px;
+      line-height: 50px;
+      margin: 100px calc(50px + 15vw) 0 calc(50px + 15vw); } }
+  .Work4boldP span {
+    font-family: "Merriweather", serif;
+    font-weight: 700; }
+
+.Work4links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 15px; }
+  .Work4links a {
+    font-family: "Merriweather", serif;
+    font-size: 120%;
+    margin: 10px 20px; }
+    .Work4links a:hover {
+      color: #FF4225;
+      transition: .7s; }
+
+.Work6Text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  text-align: center; }
+  @media (min-width: 650px) {
+    .Work6Text {
+      margin-top: 125px; } }
+  .Work6Text h1 {
+    font-family: "Merriweather", serif;
+    font-weight: 100;
+    font-size: 280%;
+    margin: 0px 0; }
+  .Work6Text h3 {
+    color: #FF4225;
+    margin: 20px 0 20px 0; }
+  .Work6Text > p {
+    color: black;
+    font-weight: 150;
+    line-height: 30px;
+    margin: 20px auto;
+    width: calc(270px + 20vw); }
+  .Work6Text a {
+    color: red; }
+    .Work6Text a:hover {
+      color: #B21F1E; }
+
+.Work6ImgReviews-Mobile {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 100px auto; }
+  @media (min-width: 990px) {
+    .Work6ImgReviews-Mobile {
+      display: none; } }
+  .Work6ImgReviews-Mobile img {
+    margin: 15px 15px;
+    height: 380px;
+    width: 280px; }
+
+.Work6ImgReviews-Desktop {
+  display: none; }
+  @media (min-width: 990px) {
+    .Work6ImgReviews-Desktop {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 100px 0; }
+      .Work6ImgReviews-Desktop img {
+        margin-bottom: 30px;
+        height: calc(330px + 13vw);
+        width: calc(580px + 13vw); } }
+
+.Work6Imgs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px; }
+  @media (min-width: 990px) {
+    .Work6Imgs {
+      margin: 100px calc(50px + 10vw); } }
+  .Work6Imgs img {
+    margin: 15px 15px;
+    width: calc(150px);
+    height: calc(150px); }
+
+.Work6Img1 {
+  margin: 0 calc(10px + 6vw); }
+  @media (min-width: 769px) {
+    .Work6Img1 {
+      margin: 100px calc(10px + 20vw); } }
+  .Work6Img1 img {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%; }
+
+.Work6boldP {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 50px 50px;
+  line-height: 30px;
+  text-align: center; }
+  @media (min-width: 769px) {
+    .Work6boldP {
+      font-size: 35px;
+      line-height: 50px;
+      margin: 100px calc(50px + 15vw) 0 calc(50px + 15vw); } }
+  .Work6boldP span {
+    font-family: "Merriweather", serif;
+    font-weight: 700; }
+
+.Work6links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 20px; }
+  .Work6links a {
+    font-family: "Merriweather", serif;
+    font-size: 120%;
+    margin: 10px 20px; }
+    .Work6links a:hover {
       color: #FF4225;
       transition: .7s; }
 

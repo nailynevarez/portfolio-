@@ -18,8 +18,8 @@ export default class Work2 extends Component {
     return (
       <ErrorBoundary>
       <div className= "Work2Text">
-      <h1>UO Muxeres</h1>
-      <h3>LOGO DESIGN</h3>
+      <h1>Majesty</h1>
+      <h3>ART DIRECTOR</h3>
       <p className = {this.state.showWork2 ? 'fadeIn' : 'fadeOut'}>
       Nominavi incorrupte te quo, id mei adipisci antiopam. Saepe iudico
       commodo ut usu, et impetus expetenda referrentur sed, te soluta prompta
@@ -30,9 +30,7 @@ export default class Work2 extends Component {
         Some more text, maybe a link to something or what my role was in a team.
       </p>
       </div>
-      <div className= "Work2Img">
-      <img src = '/images/muxeres.png' className = {this.state.showWork2 ? 'fadeIn' : 'fadeOut'}/>
-      </div>
+
 
       <div className= "Work2links">
       <Link to = '/work/work1'>Raza Unida Conference</Link>
